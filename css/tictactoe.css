@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lemonada&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.magi-selected{
+	background-color: rgba(0,0,0,0.2);
+}
+.sidenav{
+	width: 200px;
+}
+
+.right-section{
+	display: flex;
+	flex-direction: column;
+	margin-left: 200px;
+	width: calc(100vw - 200px);
+	height: 100vh;
+	background-color: #f1faee;
+	padding-top:22px;
+}
+.main-header{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+    margin: 10px auto;
+}
+.main-content{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    margin: 0 auto;
+}
+.options{
+    margin: 15px auto;
+}
+
+.water-team{
+    display: grid;
+    width: 450px;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+    "team-title team-title team-title"
+    "big-pieces med-pieces small-pieces"
+    "big-pieces med-pieces small-pieces"
+    "big-pieces med-pieces small-pieces";
+    margin-right: 10px;
+}
+.fire-team{
+    display: grid;
+    width: 450px;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+    "team-title team-title team-title"
+    "big-pieces med-pieces small-pieces"
+    "big-pieces med-pieces small-pieces"
+    "big-pieces med-pieces small-pieces";
+    margin-left: 10px;
+}
+.team-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.aqua-title{
+    font-family: 'Dancing Script', cursive;
+    font-size:29px;
+    text-decoration: underline;
+}
+.magma-title{
+    font-family: 'Lemonada', cursive;
+    font-size:19px;
+    text-decoration: underline;
+}
+.piece{
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    margin:auto;
+    transition: 200ms all;
+}
+.piece:hover{
+    filter: saturate(200%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.piece img{
+    height: 60%;
+    width: 60%;
+    margin: 20%;
+}
+.big-piece{
+    height: 130px;
+    width: 130px;
+}
+.mid-piece{
+    height: 100px;
+    width: 100px;
+}
+.sml-piece{
+    height: 70px;
+    width: 70px;
+}
+
+
+.water-piece{
+    background: #539DDF;
+    box-shadow: 0 0 20px #539DDF;
+}
+.fire-piece{
+    background: #FBA54C;
+    box-shadow: 0 0 20px #FBA54C;
+}
+
+
+.board-wrapper{
+    display: grid;
+    border: 10px outset #555;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    gap: 5px;
+}
+.celda{
+    margin: 10px 10px;
+    border-radius: 100%;
+    border: 2px dotted #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+}
+.celda:hover{
+    background-color:rgba(172, 255, 47, 0.5);
+}
+
+.options a{
+    background: rgb(83,157,223);
+    background: linear-gradient(90deg, rgba(83,157,223,1) 5%, rgba(251,165,76,1) 95%);
+    border-radius: 10px;
+}
+
+.coin{
+    width: 180px;
+    height: 180px;
+    transform-style: preserve-3d;
+}
+.coin div{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.coin img{
+    height: 60%;
+    width: 60%;
+    margin: 20%;
+}
+.coin .heads{
+    background: #539DDF;
+    background-size: contain;
+    box-shadow: 0 0 20px #539DDF;
+}
+.coin .tails{
+    background: #FBA54C;
+    transform: rotateY(-180deg);
+    background-size: contain;
+    box-shadow: 0 0 20px #FBA54C;
+}
+
+.animate-heads{
+    animation: flipHeads 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes flipHeads{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(1800deg);
+    }
+}
+.animate-tails{
+    animation: flipTails 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes flipTails{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(1980deg);
+    }
+}
+
+#startGame{
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    font-size: 25px;
+}
+.team-water-title{
+    color: #539DDF;
+}
+.aqua-title{
+    color: #539DDF;
+}
+.team-fire-title{
+    color: #FBA54C;
+}
+.magma-title{
+    color: #FBA54C;
+}

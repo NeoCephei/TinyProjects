@@ -1,0 +1,153 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.magi-selected{
+	background-color: rgba(0,0,0,0.2);
+}
+.sidenav{
+	width: 200px;
+}
+
+i.s-small{
+	font-size: 1rem;
+}
+
+.coincidences{
+	background-color:rgb(248, 235, 48);
+}
+.selected-span{
+	background-color:rgb(243, 158, 88);
+}
+
+.right-section{
+	display: flex;
+	flex-direction: column;
+	margin-left: 200px;
+	width: calc(100vw - 200px);
+	height: 100vh;
+	background-color: #f1faee;
+	padding-top:22px;
+}
+
+
+.main-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.search-bar{
+	display: flex;
+	flex-direction: column;
+}
+.search-box{
+	display: flex;
+	flex-direction: row;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 10px;
+	width: 300px;
+	height: 30px;
+	justify-content:space-around;
+	align-items:center;
+}
+#search-input{
+	border-color: transparent;
+	flex: 1;
+	font-size: 16px;
+	padding: 10px 0 0 5px;
+}
+
+
+.searched-word-container{
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+#word{
+	font-size: 12px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+
+
+.icons{
+	display: flex;
+	flex-direction: row;
+}
+.button {
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    /* Spacing */
+    padding: 17px;
+
+	width: 22px;
+	height: 22px;
+
+	background-color: transparent;
+	border: none;
+}
+.button:hover {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    padding: 17px;
+
+	cursor: pointer;
+}
+.button:focus{
+	background-color: transparent;
+}
+
+.main-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+textarea {
+	width: 60vw;
+	height: 30vh;
+	font-size:20px;
+
+	margin: 0 auto;
+	padding: 12px 18px;
+	resize: none;
+	background-color: rgba(255, 255, 255, 0.658);
+}
+textarea::placeholder{
+	font-size: 20px;
+}
+.options{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 10px;
+}
+.options>a{
+	margin: 0 10px 0 10px;
+}
+
+.translated-text{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+.loremIpsum{
+	width: 60vw;
+	height: 30vh;
+	font-size:20px;
+
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 12px 18px;
+	resize: none;
+	background-color: rgba(255, 255, 255, 0.658);
+}

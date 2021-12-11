@@ -1,0 +1,92 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.magi-selected{
+	background-color: rgba(0,0,0,0.2);
+}
+.sidenav{
+	width: 200px;
+}
+
+.project-wrapper {
+	margin-left: 210px;
+}
+
+.project-title{
+	align-content: center;
+}
+
+.project-tools{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.stopwatch-wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.stopwatch-timer {
+    background: #FFF;
+    border: 10px solid #7A7A7A;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height:300px;
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.stopwatch-timer>p{
+	font-size: 48px;
+	display: flex;
+	flex-direction: row;
+}
+
+.stopwatch-btns{	
+	margin-top: 10px;
+	padding: 0 45px 0 45px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+.btn{
+	margin:0 10px 0 10px;
+}
+
+.lap-list-wrapper{
+	margin-left: 10px;
+	width: 360px;
+	height: 346px;
+	background-color: #FFD166;
+	display: flex;
+	flex-direction: column;
+}
+.lap-title{
+	display: flex;
+	justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.lap-title>p{
+	font-size: 31px;
+}
+
+.lap-time-list{
+	width: 300px;
+	height: 300px; 
+}
+.times-list{
+	margin:5px 0 0 10px;
+}

@@ -1,0 +1,125 @@
+<!--html code -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Working Test</title>
+
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="author" content="Magí Campo">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Project, Developer">
+        <meta name="description" content="Projects Playground">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link rel="stylesheet" href="../css/loremIpsum.css">
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	</head>
+	<body>
+		<header>
+			<ul id="nav-mobile" class="sidenav sidenav-fixed #81d4fa light-blue lighten-3" style="transform: translateX(0px);">
+				<li class="bold">
+					<a href="../index.html" class="waves-effect waves-teal"><h5>MainHub</h5></a>
+				</li>    
+				<li class="bold">
+					<a href="./stopwatch.html" class="waves-effect waves-teal">StopWatch</a>
+				</li>
+				<li class="bold">
+					<a href="./calculator.html" class="waves-effect waves-teal">Calculator</a>
+				</li>
+				<li class="bold magi-selected">
+					<a href="./loremIpsum.html" class="waves-effect waves-teal">Lorem Ipsum</a>
+				</li>
+				<li class="bold">
+					<a href="./tictactoe.html" class="waves-effect waves-teal">TicTacToe</a>
+				</li>
+				<li class="bold">
+					<a href="./pokedex.html" class="waves-effect waves-teal">Pokédex</a>
+				</li>
+				<li class="bold">
+					<a href="./movies.html" class="waves-effect waves-teal">Movies</a>
+				</li>
+				<li class="bold">
+					<a href="" class="waves-effect waves-teal">New Project</a>
+				</li>
+				<li class="bold">
+					<a href="" class="waves-effect waves-teal">New Project</a>
+				</li>
+				<li class="bold">
+					<a href="" class="waves-effect waves-teal">New Project</a>
+				</li>
+				<li class="bold">
+					<a href="" class="waves-effect waves-teal">New Project</a>
+				</li>
+				<li class="bold">
+					<a href="" class="waves-effect waves-teal">New Project</a>
+				</li>
+				<li class="bold">
+					<a href="" class="waves-effect waves-teal">New Project</a>
+				</li>
+				<li class="bold">
+					<a href="" class="waves-effect waves-teal">New Project</a>
+				</li>
+				<li class="bold">
+					<a href="" class="waves-effect waves-teal">New Project</a>
+				</li>
+				<li class="bold">
+					<a href="" class="waves-effect waves-teal">New Project</a>
+				</li>
+				<li class="bold">
+					<a href="" class="waves-effect waves-teal">New Project</a>
+				</li>
+			</ul>
+		</header>
+
+		<main>
+			<div class="right-section">
+				<div class="main-header">
+					<h4>Lorem Ipsum Generator</h4>
+					<div class="search-bar">
+						<div class="search-box">
+							<input type="text" id="search-input" value=""/>
+							<button id="showSearchBar" class="button">
+								<i class="small material-icons">search</i>
+							</button>
+						</div>
+						<div class="searched-word-container hide">
+							<div id="word"></div>
+							<div class="icons">
+								<button id="previousMatch" class="button">
+									<i class="s-small material-icons">chevron_left</i>
+								</button>
+								<button id="nextMatch" class="button">
+									<i class="s-small material-icons">chevron_right</i>
+								</button>
+								<button id="closeSearchBar" class="button">
+									<i class="s-small material-icons">close</i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-section">
+					<textarea name="" id="loremInput" cols="30" rows="10" placeholder="Smash your keyboard to write Lorem Ipsum..."></textarea>
+					<div class="options">
+						<a id="copyToClipboard" class="waves-effect waves-light btn-small"><i class="material-icons right">content_copy</i>Copy to Clipboard</a>
+						<a id="clearTextArea" class="waves-effect waves-light btn-small"><i class="material-icons right">clear</i>Clear TextArea</a>
+					</div>
+				</div>
+				<div class="translated-text">
+					<h5>Lorem Ipsum</h5>
+					<div class="loremIpsum"></div>
+				</div>
+			</div>
+		</main>
+
+		<script
+	src="https://code.jquery.com/jquery-3.5.1.min.js"
+	integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+	crossorigin="anonymous"></script>
+		<!-- <script src="https://gist.github.com/ForbesLindesay/5467742.js"></script> -->
+		<script type="text/javascript" src="../js/loremIpsum.js"></script>
+	</body>
+</html>
