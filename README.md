@@ -7,15 +7,6 @@ On each project I was practising something different, from DOM manipulation to A
 The last project I did needs API Key from [TMBD](https://www.themoviedb.org/)
 
 ## How does it works?
-Actually there are 6 projects listed.
-
-* Stopwatch
-* Calculator
-* Lorem Ipsum
-* TicTacToe
-* Pokedex
-* Movies
-
 Here you can find a brief description of every project
 
 | Name      | Objective | Description |
