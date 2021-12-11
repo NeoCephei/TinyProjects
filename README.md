@@ -21,15 +21,10 @@ Here you can find a brief description of every project
 | Name      | Objective | Description |
 | ----------- | ----------- | ----------- |
 | Stopwatch      | **Learn Time Manipulation** | Simple Stopwatch that allows to start, pause, stop and reset.  |
-|
 | Calculator      | **Avoid eval when dealing with operations** | Calculator to perfom basic operations avoiding usage of .eval() to do the operations. |
-|
 | Lorem Ipsum      | **Type fake, tracker** | Generates Lorem Ipsum text as the user smash the keyboard.  |
-|
 | TicTacToe      | **Create my own drag & drop using plain Js** | Tic Tac Toe game with extra difficulty, as players can take opponent's position if the piece is bigger, extra difficulty, extra fun  |
-|
 | Pokedex     | **First API calls + Modals** | Generates a small pokedex with modal pop up on click + navigation and search bar for specific pokemon  |
-|
 | Movies      | **Personal Usage** | App to show common movies between providers and countries, to be able to watch same movies with far away beloveds  |
 
 
